@@ -1,0 +1,285 @@
+body{
+    width: 1560px;
+    background: #E5E5E5;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    /* position: relative; */
+    padding: 60px;
+}
+
+.content{
+    width: 1440px;
+    height:1440px;
+    background: #FFFFFF;
+    border-radius: 60px;
+    /* margin: 0 auto; */
+    position: relative;
+}
+
+.header{
+    min-height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}
+
+.header .header_logo{
+    margin-left: 90px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.header .header_menu{
+    margin-top: 22px;
+    margin-right: 100px;
+    width: 380px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu_items{
+    width: 43px;
+    height: 19px;
+    font-family: 'Fira Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    color: #000000;
+    border:none;
+    background-color: #FFFFFF;
+    cursor: pointer;
+}
+
+.header .header_menu .menu_btn, .promo_friday .promo_text .order_btn, .recommended .pizza_item .add{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 24px 11px;
+    gap: 10px;
+    width: 103px;
+    height: 40px;
+    background: #EC0000;
+    border-color: #EC0000;
+    border-radius: 25px;
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+    cursor: pointer;
+}
+
+.header .header_menu .menu_btn_text, .promo_friday .promo_text .order_btn_text, .recommended .pizza_item .add{
+    text-transform: uppercase;
+    font-family: 'Fira Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.promo_friday{
+    margin-left: 116px;
+    min-height: 550px;
+    display: flex;
+    justify-content: space-between;
+    align-items:center; 
+}
+
+.promo_friday .promo_text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:left;
+}
+
+.promo_friday .promo_text .promo_main_text{
+    font-family: 'Fira Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 72px;
+    display: flex;
+    align-items: center;
+    color: #00240F;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.promo_friday .promo_text .promo_second_text{
+    font-family: 'Fira Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    display: flex;
+    align-items: center;
+    color: #00240F;
+    flex: none;
+    flex-grow: 0;
+}
+
+.promo_friday .promo_text .order_btn{
+    margin-top: 36px;
+}
+
+.promo_friday .promo.img {
+    position: relative;
+    height: 550px;
+    display: flex;
+    justify-content: right;
+    flex-wrap: wrap;
+}
+
+.promo_friday .promo.img .main_pizza{
+    z-index: -1;
+}
+
+.promo_friday .promo.img .main_pizza_grad {
+    z-index: 1;
+    opacity: 50%;
+}
+
+.recommended{
+    min-height: 792px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center ;
+    align-items: center;
+}
+
+.recommended .recommended_wrap{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+}
+
+.pizza_item{
+    min-height: 530px;
+    width: 290px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #FFFFFF;
+    border: 1px solid #BDBDBD;
+    border-radius: 180px 180px 30px 30px;
+    margin-bottom: 10px;
+    padding: 24px 16px;
+    gap: 21px;
+    box-shadow: -10px 20px 40px -1px rgba(0, 0, 0, 0.2);
+}
+
+.recommended .recommended_title{
+    font-family: 'Fira Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 74px;
+    color: #00240F;
+}
+
+.recommended .pizza_pic{
+    margin-left: -18px;
+} 
+
+
+.recommended .add{
+    display: block;
+    margin: 0 auto;
+}
+
+.recommended .recommended_wrap .pizza_descr{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+
+.recommended .recommended_wrap .pizza_name, .pizza_descr_text, .pizza_price, .size{
+    display: block;
+    text-align: center;
+    justify-content: center;
+}
+
+.recommended .pizza_item .pizza_name{
+    font-family: 'Fira Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    color: #000000;
+}
+
+.recommended .pizza_item .pizza_descr_text{
+    /* margin-top: 10px; */
+    font-family: 'Fira Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 18px;
+    color: #333333;
+    flex-grow: 0;
+    text-align: center;
+}
+
+.recommended .pizza_item .pizza_price{
+    /* margin-top: 20px; */
+    font-family: 'Fira Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    color: #05A84B;
+}
+
+.recommended .pizza_item .size{
+    /* margin-top: 20px; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 243px;
+    height: 40px;
+    background: #FFFFFF;
+    border: 1px solid #4F4F4F;
+    border-radius: 25px;
+}
+
+.recommended .pizza_item .add {
+    /* margin-top: 10px; */
+    text-align: center;
+    width: 243px;
+    height: 40px;
+    margin-bottom: 15px;
+}
+
+.top_leaf{
+    position: absolute;
+    top: 25px;
+    left:750px;
+}
+
+.right_leaf{
+    position: absolute;
+    top: 1450px;
+    left: 1450px;
+}
+
+.left_leaf {
+    position: absolute;
+    top: 750px;
+    left: -20px;
+}
+
+.tomato {
+    position: absolute;
+    top: 1450px;
+    left: -20px;
+    z-index: -2;
+}
